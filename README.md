@@ -1,1 +1,2 @@
-# FetchRewardsPyramidWord
+# Pyramid Word Checker
+
