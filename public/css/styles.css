@@ -1,4 +1,36 @@
 body {
   font-family: 'Helvetica', 'Arial', sans-serif;
-  background-color: darkgrey;
+  background-color: #f9f7f7;
+  text-align: center;
+  margin: 0px;
+  color: #112d4e;
+}
+
+.heading h1 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+ 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  margin: 20px 0 15px 0;
+}
+
+.btn-primary {
+  background-color: #112d4e;
+  border-color: #112d4e;
+}
+
+.btn-primary:hover {
+  background-color: #3f72af;
+  border-color: #3f72af;
 }
