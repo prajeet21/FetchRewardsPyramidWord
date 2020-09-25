@@ -2,26 +2,26 @@
 
 I have used Node and Express to create this service.
 Before starting, make sure that Node is installed in your machine.
-Click [here](https://nodejs.org/en/) to install latest version of node
+Click [here](https://nodejs.org/en/) to install latest version of node.
 
 
 ## Once node is installed, follow these steps:
 
 1. From the terminal, switch to the directory where you want to download the repo.
 
-2. Clone the repository
+2. Clone the repository:
 
 ```
 git clone https://github.com/prajeet21/FetchRewardsPyramidWord.git
 ```
 
-3. This will create a new _**FetchRewardsPyramidWord**_ directory and then go into this new directory
+3. This will create a new _**FetchRewardsPyramidWord**_ directory and then go into this new directory:
 
 ```
 cd FetchRewardsPyramidWord
 ```
 
-4. Then install the necessary dependencies using the following command.
+4. Then install the necessary dependencies using the following command:
 
 ```
 npm install
