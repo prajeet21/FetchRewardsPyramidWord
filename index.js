@@ -1,17 +1,25 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const ejs = require("ejs");
+const checkPyramid = require(__dirname + "/checkPyramid.js");
 
 const app = express();
-app.use("view engine", "ejs");
+app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
+
+let message = "This is the message";
 
 app.get("/", (req, res) => {
-    res.sendFile("index");
+    res.render("index", {message: message});
 });
 
 app.post("/", (req, res) => {
     const inputWord = req.body.inputWord;
-    console.log(inputWord);
+    // add logic here
+    const result = checkPyramid(inputWord);
+    console.log("This is the result" + result);
+    res.redirect("/");
 });
 
 app.listen(3000, () => {
